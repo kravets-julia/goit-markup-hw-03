@@ -8,6 +8,36 @@
     --card-background: #FFFFFF;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -19,11 +49,22 @@ body {
     background-color: var(--white-color);
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 5px solid red;
+    margin: 0 auto;
 
+
+}
 
 /* Header */
+.heder {}
 
 .logo {
+    display: inline-block;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -31,6 +72,9 @@ body {
     text-decoration: none;
 
     color: var(--accent-color);
+
+    margin-top: 24px;
+    margin-bottom: 25px;
 }
 
 .logo-black {
@@ -68,6 +112,7 @@ body {
 
 .hero {
     background-color: var(--background-color);
+    text-align: center;
 }
 
 .hero-title {
@@ -79,9 +124,17 @@ body {
     text-transform: uppercase;
 
     color: var(--white-color);
+
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 696px;
 }
 
 .button {
+    /* width: 216px;
+    height: 50px; */
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -94,6 +147,7 @@ body {
 
     color: var(--white-color);
     background-color: var(--accent-color);
+    padding: 10px 32px;
 
 }
 
@@ -121,16 +175,23 @@ body {
     text-transform: uppercase;
 
     color: var(--title-color);
+    margin-bottom: 10px;
 }
 
 
 /* What do we do? */
+
+.examples {
+    text-align: center;
+}
+
 
 .title {
     font-size: 36px;
     line-height: 1.17;
 
     color: var(--title-color);
+    margin-bottom: 50px;
 }
 
 
@@ -138,6 +199,7 @@ body {
 
 .team {
     background: var(--secondary-babackground-color);
+    text-align: center;
 }
 
 
@@ -154,17 +216,25 @@ body {
 }
 
 
+.team-photo {
+    margin-bottom: 30px;
+}
+
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 
     color: var(--title-color);
+    margin-bottom: 10px;
 }
 
 .team-position {
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
+
+    margin-bottom: 30px;
 }
 
 
@@ -174,9 +244,15 @@ body {
     background-color: var(--background-color);
 }
 
+.logo-footer {
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
 .logo-white {
     color: var(--white-color);
 }
+
 
 .address-item,
 .address-list-item {
@@ -199,8 +275,8 @@ body {
 
 
 
-
 /* Portfolio */
+
 
 .portfolio-button {
     font-family: inherit;
@@ -208,12 +284,15 @@ body {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    border: none;
+    border: 1px transparent;
     border-radius: 4px;
     cursor: pointer;
 
     color: var(--title-color);
     background-color: var(--secondary-babackground-color);
+
+    padding: 6px 22px;
+    min-width: 73px;
 }
 
 .portfolio-button:hover,
@@ -231,9 +310,19 @@ body {
     letter-spacing: 0.06em;
 
     color: var(--title-color);
+
+    margin-left: 24px;
+    margin-bottom: 4px;
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
+
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.portfolio-photo {
+    margin-bottom: 20px;
 }
