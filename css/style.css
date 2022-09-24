@@ -60,7 +60,10 @@ body {
 }
 
 /* Header */
-.heder {}
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .logo {
     display: inline-block;
@@ -73,8 +76,6 @@ body {
 
     color: var(--accent-color);
 
-    margin-top: 24px;
-    margin-bottom: 25px;
 }
 
 .logo-black {
@@ -83,6 +84,22 @@ body {
 
 .list {
     list-style: none;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.contacs-list {
+    display: flex;
+}
+
+.nav-list-logo {
+    display: flex;
+}
+
+.flex-header {
+    display: flex;
 }
 
 .nav-item {
@@ -113,6 +130,8 @@ body {
 .hero {
     background-color: var(--background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -154,6 +173,13 @@ body {
 
 /* Our advantages */
 
+
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -183,6 +209,7 @@ body {
 
 .examples {
     text-align: center;
+    padding-bottom: 94px;
 }
 
 
@@ -200,6 +227,8 @@ body {
 .team {
     background: var(--secondary-babackground-color);
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -242,11 +271,12 @@ body {
 
 .footer {
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
     margin-bottom: 20px;
-    margin-top: 60px;
 }
 
 .logo-white {
@@ -260,6 +290,12 @@ body {
     font-style: normal;
 
     color: var(--white-color);
+
+    padding-bottom: 9px;
+}
+
+.address-list-item:last-child {
+    padding-bottom: 0;
 }
 
 .address-list-item {
