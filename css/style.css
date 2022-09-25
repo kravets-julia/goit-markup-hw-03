@@ -53,7 +53,6 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 5px solid red;
     margin: 0 auto;
 
 
@@ -63,7 +62,9 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
+
 
 .logo {
     display: inline-block;
@@ -75,6 +76,8 @@ body {
     text-decoration: none;
 
     color: var(--accent-color);
+
+    margin-right: 94px;
 
 }
 
@@ -88,18 +91,23 @@ body {
 
 .nav-list {
     display: flex;
+    gap: 50px;
 }
 
 .contacs-list {
     display: flex;
+    gap: 50px;
+    margin-left: auto;
 }
 
 .nav-list-logo {
     display: flex;
+    align-items: center;
 }
 
 .flex-header {
     display: flex;
+    align-items: center;
 }
 
 .nav-item {
@@ -194,6 +202,10 @@ body {
     overflow: hidden;
 }
 
+.advantages-list {
+    display: flex;
+    gap: 30px;
+}
 
 .secondary-title {
     font-size: 14px;
@@ -221,6 +233,11 @@ body {
     margin-bottom: 50px;
 }
 
+.examples-list {
+    display: flex;
+    gap: 30px;
+}
+
 
 /* Our team */
 
@@ -231,10 +248,15 @@ body {
     padding-bottom: 94px;
 }
 
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
 
 .team-item {
-    width: 270px;
-    height: 368px;
+    width: calc((100%-90px)/4);
+    /* height: 368px; */
 
     background: var(--card-background);
 
@@ -290,12 +312,11 @@ body {
     font-style: normal;
 
     color: var(--white-color);
-
-    padding-bottom: 9px;
 }
 
-.address-list-item:last-child {
-    padding-bottom: 0;
+
+.footer-address-list {
+    padding: 9px 0px;
 }
 
 .address-list-item {
@@ -312,6 +333,17 @@ body {
 
 
 /* Portfolio */
+
+.portfolio {
+    padding-top: 94px;
+}
+
+.portfolio-button-list {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
 
 
 .portfolio-button {
@@ -337,7 +369,24 @@ body {
     color: var(--white-color);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
+.portfolio-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.portfolio-inform {
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-title {
@@ -347,7 +396,6 @@ body {
 
     color: var(--title-color);
 
-    margin-left: 24px;
     margin-bottom: 4px;
 }
 
@@ -355,10 +403,5 @@ body {
     font-size: 16px;
     line-height: 1.88;
 
-    margin-left: 24px;
-    margin-bottom: 20px;
-}
 
-.portfolio-photo {
-    margin-bottom: 20px;
 }
